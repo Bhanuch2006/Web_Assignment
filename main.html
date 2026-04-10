@@ -32,7 +32,6 @@
 </header>
 
 <section class="hero">
-<h2>Car Rentals</h2>
 </section>
 
 <section id="fleet">
@@ -41,27 +40,39 @@
 </section>
 
 <section id="booking">
-<h2>Book Your Ride</h2>
-<fieldset>
-<p>Selected Cars</p>
-<ul id="selectedItems"></ul>
-<p>Ride Type</p>
-<label><input type="radio" name="type"> Pickup</label>
-<label><input type="radio" name="type"> Delivery</label>
-<p>Payment</p>
-<select id="payment">
-<option value="">Select Payment</option>
-<option>Card</option>
-<option>Cash</option>
-<option>UPI</option>
-</select>
-<p>Phone Number</p>
-<input type="text" id="phone" placeholder="Enter phone number">
-<p>Pickup Location</p>
-<textarea id="address"></textarea>
-</fieldset>
-<button onclick="processBooking()" class="btn-submit">Confirm Booking</button>
-<div id="output" class="order-output"></div>
+	<h2>Book Your Ride</h2>
+	<div class="booking-grid">
+		<div class="booking-form">
+			<fieldset>
+				<p class="form-label">Ride Type</p>
+				<label><input type="radio" name="type"> Pickup</label>
+				<label><input type="radio" name="type"> Delivery</label>
+
+				<p class="form-label">Payment</p>
+				<select id="payment">
+					<option value="">Select Payment</option>
+					<option>Card</option>
+					<option>Cash</option>
+					<option>UPI</option>
+				</select>
+
+				<p class="form-label">Phone Number</p>
+				<input type="text" id="phone" placeholder="Enter phone number">
+
+				<p class="form-label">Pickup Location</p>
+				<textarea id="address"></textarea>
+			</fieldset>
+
+			<button onclick="processBooking()" class="btn-submit">Confirm Booking</button>
+			<div id="output" class="order-output"></div>
+		</div>
+
+		<aside class="booking-summary">
+			<h3>Your Selection</h3>
+			<p class="summary-note">Choose cars from our fleet. Click "Add" on any car to include it in your booking.</p>
+			<ul id="selectedItems"></ul>
+		</aside>
+	</div>
 </section>
 
 <section id="contact" class="contact-simple">
