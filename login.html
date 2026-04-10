@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DriveEase | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-login">
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-mark">
+                <span class="logo-icon">DR</span>
+                <span class="logo-text">DriveEase</span>
+            </div>
+            <a class="btn ghost" href="index.html">Back to home</a>
+        </div>
+    </header>
+
+    <main class="login-main">
+        <section class="login-shell">
+            <div class="login-copy">
+                <p class="eyebrow">Member access</p>
+                <h1>Unlock premium drives.</h1>
+                <p class="lead">Log in to manage bookings, upgrades, and concierge requests.</p>
+                <div class="login-highlights">
+                    <div>
+                        <h4>Instant pickup</h4>
+                        <p>Keyless access and priority support.</p>
+                    </div>
+                    <div>
+                        <h4>Verified fleet</h4>
+                        <p>Every car inspected before every ride.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="login-card">
+                <h2>Welcome back</h2>
+                <p>Login to continue your journey.</p>
+
+                <label>Full name
+                    <input type="text" id="loginName" placeholder="Enter your name">
+                </label>
+
+                <label>Email address
+                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="loginTerms" checked>
+                    I agree to the Terms & Conditions
+                </label>
+
+                <p id="loginError" class="error"></p>
+
+                <button class="btn primary full" onclick="handleLogin()">Login</button>
+                <p class="hint">New here? Start a booking to create an account.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 DriveEase Car Rentals. Secure member sign-in.</p>
+            <a href="index.html">Explore fleet</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

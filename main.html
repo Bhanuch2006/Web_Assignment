@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityRide | Home</title>
+<link rel="icon" href="images/logo.avif">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="header-container">
+<div class="logo">
+<img src="images/logo.avif" alt="CityRide">
+<span>CityRide</span>
+</div>
+
+<nav>
+<a href="#fleet">Fleet</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+<div style="display:flex; align-items:center;">
+<div id="profileSection" class="profile-chip"></div>
+</div>
+
+</div>
+</header>
+
+<section class="hero">
+<h2>Car Rentals</h2>
+</section>
+
+<section id="fleet">
+<h2>Our Fleet</h2>
+<div id="car-grid" class="menu-grid"></div>
+</section>
+
+<section id="booking">
+<h2>Book Your Ride</h2>
+<fieldset>
+<p>Selected Cars</p>
+<ul id="selectedItems"></ul>
+<p>Ride Type</p>
+<label><input type="radio" name="type"> Pickup</label>
+<label><input type="radio" name="type"> Delivery</label>
+<p>Payment</p>
+<select id="payment">
+<option value="">Select Payment</option>
+<option>Card</option>
+<option>Cash</option>
+<option>UPI</option>
+</select>
+<p>Phone Number</p>
+<input type="text" id="phone" placeholder="Enter phone number">
+<p>Pickup Location</p>
+<textarea id="address"></textarea>
+</fieldset>
+<button onclick="processBooking()" class="btn-submit">Confirm Booking</button>
+<div id="output" class="order-output"></div>
+</section>
+
+<section id="contact" class="contact-simple">
+	<div class="section-box">
+		<h2>Contact Us</h2>
+		<p><strong>📍 Address:</strong> ARANI MAIN ROAD Sathumadurai, near universal automotive, Adukkamparai, Vellore, Tamil Nadu 632011</p>
+		<p><strong>📞 Phone:</strong> 08019283845</p>
+		<p><strong>⏰ Timings:</strong> 10 AM – 6:30 PM (All Days)</p>
+		<iframe
+			src="https://maps.google.com/maps?q=ARANI%20MAIN%20ROAD%20Sathumadurai%2C%20near%20universal%20automotive%2C%20Adukkamparai%2C%20Vellore%2C%20Tamil%20Nadu%20632011&output=embed"
+			width="100%"
+			height="250"
+			style="border:0;border-radius:10px">
+		</iframe>
+	</div>
+</section>
+
+<footer>© CityRide</footer>
+
+<div id="toast">Booking Confirmed </div>
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
+<audio id="clickSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI';}
+body{background:#f7f6f4;color:#333;}
+
+.feedback-page{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+.login-page{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+header{
+background:#fff;
+padding:15px 0;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+.header-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+gap:20px;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:bold;
+color:#1f7a8c;
+}
+.logo img{width:40px;}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#555;
+position:relative;
+}
+nav a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#1f7a8c;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+nav a:hover::after{width:100%;}
+
+.hero{
+width:100%;
+height:60vh;
+max-width:none;
+margin:0;
+padding:0;
+border-radius:0;
+background:url('images/background.png') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.hero h2{
+background:rgba(255,255,255,0.7);
+padding:10px 20px;
+border-radius:8px;
+}
+
+section{
+max-width:1100px;
+margin:40px auto;
+padding:25px;
+background:white;
+border-radius:10px;
+}
+
+.page-content{
+flex:1;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.menu-item{
+border:1px solid #eee;
+border-radius:10px;
+overflow:hidden;
+cursor:pointer;
+transition:0.3s;
+}
+.menu-item:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.menu-item img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+.menu-details{padding:15px;}
+.price{color:#1f7a8c;font-weight:bold;}
+
+#booking{
+background:#e6edf0;
+padding:40px;
+border-radius:15px;
+}
+fieldset{
+border:2px solid #1f7a8c;
+padding:25px;
+background:#eaf1f3;
+}
+textarea, select, input{
+width:100%;
+padding:10px;
+margin-top:8px;
+border:1px solid #d7dde0;
+border-radius:8px;
+}
+
+textarea:focus, select:focus, input:focus{
+outline:none;
+border-color:#1f7a8c;
+box-shadow:0 0 0 2px rgba(31, 122, 140, 0.15);
+}
+
+input[type="radio"]{
+width:auto;
+margin-right:8px;
+}
+
+label{
+display:flex;
+align-items:center;
+gap:8px;
+margin-top:5px;
+}
+
+.btn-submit{
+margin-top:15px;
+background:#1f7a8c;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+border-radius:6px;
+width:100%;
+}
+
+.order-output{
+margin-top:15px;
+padding:15px;
+background:#1f2937;
+color:#2ecc71;
+display:none;
+border-radius:8px;
+}
+
+#selectedItems button{
+margin-left:10px;
+background:red;
+color:white;
+border:none;
+padding:3px 6px;
+border-radius:4px;
+cursor:pointer;
+}
+
+#contact{
+background:#f1f5f7;
+padding:40px;
+}
+
+.contact-simple{
+max-width:1100px;
+margin:40px auto;
+}
+
+.section-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0, 0, 0, 0.08);
+display:grid;
+gap:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:white;
+}
+
+.footer-plain{
+text-align:center;
+padding:20px;
+color:#555;
+}
+
+.login-page .footer-plain{
+margin-top:auto;
+}
+
+.card{
+max-width:600px;
+margin:30px auto;
+text-align:center;
+}
+
+.center-card{
+max-width:400px;
+margin:100px auto;
+}
+
+.login-card{
+background:white;
+padding:28px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(31, 122, 140, 0.15);
+text-align:center;
+}
+
+.login-card h2{
+font-size:26px;
+margin-bottom:8px;
+color:#1f2937;
+}
+
+.login-subtitle{
+color:#6b7280;
+font-size:14px;
+margin-bottom:12px;
+}
+
+.login-hint{
+margin-top:12px;
+font-size:12px;
+color:#6b7280;
+}
+
+.form-box{
+width:100%;
+margin-top:20px;
+text-align:left;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.check-row{
+margin-top:15px;
+display:flex;
+align-items:center;
+gap:10px;
+cursor:pointer;
+font-size:14px;
+color:#555;
+justify-content:flex-start;
+}
+
+.check-row input{
+width:auto;
+margin:0;
+}
+
+.error-text{
+color:red;
+font-size:14px;
+margin-top:10px;
+text-align:center;
+font-weight:bold;
+height:15px;
+}
+
+.profile-chip{
+font-weight:bold;
+color:#1f7a8c;
+background:#e8f3f5;
+padding:5px 15px;
+border-radius:20px;
+display:none;
+}
+
+.form-label{
+margin-top:15px;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+.feedback-output{
+margin-top:10px;
+text-align:center;
+font-weight:bold;
+height:15px;
+}
+
+.feedback-card{
+max-width:700px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.feedback-form{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+gap:12px;
+text-align:left;
+}
+
+.rating-row{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+}
+
+.feedback-form textarea{
+min-height:120px;
+}
+
+.reviews{
+max-width:600px;
+margin:0 auto;
+padding-bottom:50px;
+background:transparent;
+}
+
+.reviews-header{text-align:center;margin-bottom:30px;}
+.reviews-header h3{color:#555;font-size:18px;margin-top:5px;}
+.reviews-list{display:flex;flex-direction:column;gap:15px;}
+.review-card{background:white;padding:18px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.05);border:1px solid #efefef;}
+.review-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.review-top b{color:#1f7a8c;font-size:16px;}
+.review-top span{font-weight:bold;color:#777;font-size:14px;}
+
+#toast{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2ecc71;
+color:white;
+padding:15px;
+display:none;
+border-radius:8px;
+}
+#topBtn{
+position:fixed;
+bottom:20px;
+left:20px;
+display:none;
+}

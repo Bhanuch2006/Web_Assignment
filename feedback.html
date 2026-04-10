@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityRide | Feedback</title>
+<link rel="icon" href="images/logo.avif">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="feedback-page">
+
+<header>
+<div class="header-container">
+<div class="logo">
+<img src="images/logo.avif" alt="CityRide">
+<span>CityRide</span>
+</div>
+
+<nav>
+<a href="main.html#fleet">Fleet</a>
+<a href="main.html#booking">Booking</a>
+<a href="main.html#contact">Contact</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+<div style="display:flex; align-items:center;">
+<div id="profileSection" class="profile-chip"></div>
+</div>
+
+</div>
+</header>
+
+<main class="page-content">
+    <section id="feedback" class="feedback-card">
+        <h2>We Value Your Feedback</h2>
+        <p>Please let us know how your ride was!</p>
+        <div class="feedback-form">
+            <input type="text" id="feedbackName" placeholder="Your Name" required>
+            <input type="email" id="feedbackEmail" placeholder="Your Email" required>
+            <p class="form-label">How would you rate our service?</p>
+            <label class="rating-row"><input type="radio" name="rating" value="excellent"> Excellent</label>
+            <label class="rating-row"><input type="radio" name="rating" value="good"> Good</label>
+            <label class="rating-row"><input type="radio" name="rating" value="average"> Average</label>
+            <textarea id="feedbackMsg" placeholder="Share your thoughts with us..."></textarea>
+            <button onclick="submitFeedback()" class="btn-submit">Submit Feedback</button>
+            <p id="feedbackOutput" class="feedback-output"></p>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="reviews-header">
+            <h2>Recent Reviews</h2>
+            <h3>Overall Rating: 4.2 / 5.0</h3>
+        </div>
+    
+        <div class="reviews-list">
+            <div class="review-card">
+                <div class="review-top">
+                    <b>Ritwik</b>
+                    <span>5/5</span>
+                </div>
+                <p>Clean car and smooth pickup. Will book again.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-top">
+                    <b>Shaunak</b>
+                    <span>4/5</span>
+                </div>
+                <p>Great service, the SUV was spotless.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-top">
+                    <b>Gaurav</b>
+                    <span>4/5</span>
+                </div>
+                <p>Quick response from support team.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>© CityRide</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
