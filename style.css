@@ -168,7 +168,6 @@ display:none;
 border-radius:8px;
 }
 
-/* Booking two-column layout */
 .booking-grid{
 	display:grid;
 	grid-template-columns: 1fr 340px;
